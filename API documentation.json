@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "71db9f7e-44e4-481d-b003-e2a4c66f70dd",
+		"name": "Facility API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all facilities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-AUTH",
+						"value": "Excercise_completed_2022",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/api/facilities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_intern_test_setup",
+						"api",
+						"facilities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific facility",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-AUTH",
+						"value": "Excercise_completed_2022",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/api/facilities/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_intern_test_setup",
+						"api",
+						"facilities",
+						"46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create facility",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "API-AUTH",
+						"value": "Excercise_completed_2022",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"location_id\": 2,\r\n    \"tags\": [\r\n        \"Popular\",\r\n        \"Vegan\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/facility",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_intern_test_setup",
+						"api",
+						"facility"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update facility",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "API-AUTH",
+						"value": "Excercise_completed_2022",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Newly added\",\r\n    \"location_id\": 1,\r\n    \"tags\": [\r\n        \"Chinese\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/facility/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_intern_test_setup",
+						"api",
+						"facility",
+						"46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete facility",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "API-AUTH",
+						"value": "Excercise_completed_2022",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/facility/47",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_intern_test_setup",
+						"api",
+						"facility",
+						"47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search facilities (by Facility Name, Tag Name & City Names)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-AUTH",
+						"value": "Excercise_completed_2022",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/search?criteria=Sweet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_intern_test_setup",
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Sweet"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
