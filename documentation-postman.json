@@ -23,7 +23,6 @@
 						"localhost"
 					],
 					"path": [
-						"web_intern_test_setup",
 						"api",
 						"facilities"
 					]
@@ -49,7 +48,6 @@
 						"localhost"
 					],
 					"path": [
-						"web_intern_test_setup",
 						"api",
 						"facilities",
 						"46"
@@ -95,7 +93,6 @@
 						"localhost"
 					],
 					"path": [
-						"web_intern_test_setup",
 						"api",
 						"facility"
 					]
@@ -140,7 +137,6 @@
 						"localhost"
 					],
 					"path": [
-						"web_intern_test_setup",
 						"api",
 						"facility",
 						"46"
@@ -181,7 +177,6 @@
 						"localhost"
 					],
 					"path": [
-						"web_intern_test_setup",
 						"api",
 						"facility",
 						"47"
@@ -223,7 +218,6 @@
 						"localhost"
 					],
 					"path": [
-						"web_intern_test_setup",
 						"api",
 						"search"
 					],
